@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User index{% endblock %}
+
+{% block body %}
+<h1>My informatons</h1>
+        {% for user in users %}
+
+            <div class="myInfo">
+                <p>id : {{ user.id }}</p>
+                <p>email : {{ user.email }}</p>
+                <p>role : {{ user.roles ? user.roles|json_encode : '' }}</p>
+
+
+                    <a href="{{ path('app_user_show', {'id': user.id}) }}">show</a>
+                    <a href="{{ path('app_user_edit', {'id': user.id}) }}">edit</a>
+
+            </div>
+        {% else %}
+
+            <tr>
+                <td colspan="5">no one found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_user_new') }}">Create new</a>
+{% endblock %}

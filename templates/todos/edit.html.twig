@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Todos{% endblock %}
+
+{% block body %}
+    <h1>Edit Todos</h1>
+
+    {{ include('todos/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_todos_index') }}">back to list</a>
+
+    {{ include('todos/_delete_form.html.twig') }}
+{% endblock %}

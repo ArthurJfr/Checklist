@@ -1,0 +1,30 @@
+.base-container {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+.form-control {
+    outline: none;
+    padding: 5px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.signup {
+    text-align: center;
+}
+.btn {
+    background-color : rebeccapurple ;
+    width: 100px;
+    font-size : 20px;
+    color: white;
+    border : none;
+    border-radius : 999px;
+    padding : 5px;
+    margin-top : 25px;
+    cursor : pointer;
+}

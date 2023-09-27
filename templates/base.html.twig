@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('asset/css/nav.css')}}">
+        <link rel="stylesheet" href="{{asset('asset/css/todo.css')}}">
+        <link rel="stylesheet" href="{{asset('asset/css/login.css')}}">
+        <link rel="stylesheet" href="{{asset('asset/css/register.css')}}">
         {% block stylesheets %}
         {% endblock %}
 
@@ -11,6 +17,8 @@
         {% endblock %}
     </head>
     <body>
+    <div class="maincard">
         {% block body %}{% endblock %}
+    </div>
     </body>
 </html>

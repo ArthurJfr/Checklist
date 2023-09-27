@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Todos index{% endblock %}
+
+{% block body %}
+    <h1>Todos index</h1>
+        {% for todo in todos %}
+                <div class="line"></div>
+                <h4>{{ todo.name }}</h4>
+                <p>{{ todo.content }}</p>
+                <strong>{{ todo.createdAt ? todo.createdAt|date('Y-m-d H:i:s') : '' }}</strong>
+                <strong>{{ todo.modifiedAt ? todo.modifiedAt|date('Y-m-d H:i:s') : '' }}</strong>
+
+                    <a href="{{ path('app_todos_show', {'id': todo.id}) }}">show</a>
+                    <a href="{{ path('app_todos_edit', {'id': todo.id}) }}">edit</a>
+
+        {% else %}
+                <p>no records found</p>
+        {% endfor %}
+    <a href="{{ path('app_todos_new') }}">Create new</a>
+{% endblock %}

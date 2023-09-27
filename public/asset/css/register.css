@@ -1,0 +1,26 @@
+.backto {
+    margin-top : 25px;
+}
+#user_email {
+    outline: none;
+    margin-left: 20px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    cursor: pointer;
+}
+#user_password {
+    margin-top: 10px;
+    outline: none;
+    margin-left: 20px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    cursor: pointer;
+}
