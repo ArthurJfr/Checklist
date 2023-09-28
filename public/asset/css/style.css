@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 :root{
     --bg : url(../img/frame.svg);
+    --text-color : #FFF;
+    --font-f : 'Poppins', sans-serif;
+    --border-rm : 8px;
+    --border-rl : 16px;
+    --container-w : 450px;
+    --center-m : 0 auto;
+    --mxs : 10px;
+    --ms : 15px;
+    --mm : 20px;
+    --ml : 25px;
+    --mxl : 30px;
 }
 
 body {
@@ -8,12 +19,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .maincard {
-    color: white;
+    color: var(--text-color);
     padding: 2rem;
-    border-radius: 16px;
-    width: 450px;
+    border-radius: var(--border-rl);
+    width: var(--container-w);
     margin: 5rem auto 0 auto;
     background: rgba(0,0,0, 0.4);
     box-shadow: 0 0 20px 5px #656565;
     border: 1px solid darkgrey;
+}
+.content_wrapper {
+    position : relative;
 }

@@ -25,11 +25,14 @@ class TodosController extends AbstractController
     #[Route('/new', name: 'app_todos_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
+
         $todo = new Todos();
         $form = $this->createForm(TodosType::class, $todo);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+
             $entityManager->persist($todo);
             $entityManager->flush();
 

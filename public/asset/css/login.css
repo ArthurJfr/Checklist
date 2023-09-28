@@ -25,6 +25,6 @@
     border : none;
     border-radius : 999px;
     padding : 5px;
-    margin-top : 25px;
+    margin-top : var(--ml);
     cursor : pointer;
 }

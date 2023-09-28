@@ -1,9 +1,9 @@
 .backto {
-    margin-top : 25px;
+    margin-top :  var(--ml);
 }
 #user_email {
     outline: none;
-    margin-left: 20px;
+    margin-left: var(--mm);
     padding: 5px;
     height: 30px;
     border-radius: 8px;
@@ -15,7 +15,7 @@
 #user_password {
     margin-top: 10px;
     outline: none;
-    margin-left: 20px;
+    margin-left:  var(--mm);
     padding: 5px;
     height: 30px;
     border-radius: 8px;

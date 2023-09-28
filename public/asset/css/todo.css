@@ -1,4 +1,6 @@
 .bar {
     width: 100px;
+    height: 1px;
+    background: #000000;
     margin : 0 auto;
 }

@@ -14,9 +14,6 @@ class TodosType extends AbstractType
         $builder
             ->add('name')
             ->add('content')
-            ->add('created_at')
-            ->add('modified_at')
-            ->add('user')
         ;
     }
 
